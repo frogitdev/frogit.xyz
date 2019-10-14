@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>FrogIT</title>
+    <meta name="author" content="FrogIT">
+    <meta name="description" content="FrogIT를 가장 빠르게 알아볼 수 있는 공식 웹사이트">
+    <meta property="og:image" content="/src/icon.png">
+    <meta property="og:description" content="FrogIT를 가장 빠르게 알아볼 수 있는 공식 웹사이트">
+    <meta property="og:title" content="FrogIT 공식 웹사이트">
+    <link rel="icon" href="/src/icon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
+</head>
+<body>
+    <header class="row va">
+        <div class="content">
+            <div class="text-a">FROGIT</div>
+        </div>
+    </header>
+    <nav class="row va ha">
+        <div id="menu-list" class="content row">
+            <div id="menu-left" class="row">
+                <a class="menu-button menu-nav" onclick="scrollPage('#social')">최근 글</a>
+                <a class="menu-button menu-nav" onclick="scrollPage('#introduce')">소개</a>
+                <a class="menu-button menu-nav" onclick="scrollPage('#project')">작품</a>
+                <a class="menu-button menu-nav" onclick="scrollPage('#trace')">연혁</a>
+            </div>
+            <div id="menu-center" class="row">
+                <a class="menu-button" onclick="scrollPage(0)">
+                    <img src="/src/logo_blacktrans.png" style="width: 36px;">
+                </a>
+            </div>
+            <div id="menu-right" class="row">
+                <a class="menu-button menu-nav" href="https://blog.naver.com/kim04099" target="_blank">블로그</a>
+                <a class="menu-button menu-nav" href="https://t.me/frogit" target="_blank">텔레그램</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="social" class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b">최근 글</h1>
+            <div id="rss-feeds" class="sbox-cont">
+                
+            </div>
+            </div>
+        </div>
+        <div id="introduce" class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b">소개</h1>
+            <span style="font-size:3em">“</span><br>
+            <span style="font-size:1.2em">IT, 특히 소프트웨어에 관심이 많은 고등학생입니다. 2015년부터 블로그에 IT/코딩/디자인/게임/대중교통에 대한 글을 주로 쓰고 있습니다. 개발은 웹 프론트엔드 위주로 공부해왔고 Vue.js, React 등 웬만한 프레임워크는 다룰 수 있습니다. 최근에는 네트워크와 Node.js, Java 백엔드를 공부중입니다. 디자인도 좀 합니다. 물론 파워포인트로 야매로 합니다.</span><br><br>
+            <span style="font-size:3em">”</span>
+            </div>
+        </div>
+        <div id="project" class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b">작품</h1>
+            <div class="sbox-cont">
+                <div id="sbox-froggymemo" class="sbox sbox-img link" onclick="window.open('https://memoapp.frogit.xyz', '_blank')">
+                    
+                </div>
+                <div id="sbox-tools" class="sbox sbox-img link" onclick="window.open('https://tools.frogit.xyz', '_blank')">
+                    
+                </div>
+                <div id="sbox-notibooth" class="sbox link" onclick="window.open('https://github.com/frogitdev/notibooth', '_blank')">
+                    <h2>NotiBooth</h2>
+                    <p>고객호출 시스템</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="trace" class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b">연혁</h1>
+            <div class="trace-cont">
+                <div class="trace-box trace-left">
+                    <div class="sbox">
+                    <h2>2013.<span class="dot7">05.08.</span></h2>
+                    <p>컴퓨터 프로그램에 관심을 가지기 시작한 시기. 파워포인트에 너무 몰두한 나머지, 파워포인트 게임/가상OS 공유 블로그 'PreWorld'를 티스토리에 개설했습니다. 지금은 파워포인트 고인물입니다.</p>
+                    </div>
+                </div>
+                <div class="trace-box trace-right">
+                    <div class="sbox">
+                    <h2>2014.<span class="dot7">05.30.</span></h2>
+                    <p>워드프레스 사이트 개설 / VB.NET 강좌를 시작했습니다. 운영체제에도 관심이 깊어져 여러 리눅스를 깔아보기도 했습니다.</p>
+                    </div>
+                </div>
+                <div class="trace-box trace-left">
+                    <div class="sbox">
+                    <h2>2015.<span class="dot7">02.14.</span></h2>
+                    <p>네이버 블로그 개설. IT/소프트웨어 관련 포스팅을 통한 전성기의 시작.</p>
+                    </div>
+                </div>
+                <div class="trace-box trace-right">
+                    <div class="sbox">
+                    <h2>2017.<span class="dot7">초</span></h2>
+                    <p>웹 개발 시작. HTML/CSS/JavaScript는 제 오랜 친구입니다.</p>
+                    </div>
+                </div>
+                <div class="trace-box trace-left">
+                    <div class="sbox">
+                    <h2 id="today"></h2>
+                    <p>또 하나의 흔적을 남기기 위해 열심히 뛰는 중..</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer class="row va">
+        <div class="content">
+            <p>(C) FrogIT</p>
+            <p>Website made without CSS Frameworks</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

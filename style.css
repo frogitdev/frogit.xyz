@@ -1,0 +1,263 @@
+@font-face {
+    font-family: SpoqaHanSans;
+    src: url('./src/spoqahansans-reg.woff') format('woff')
+}
+@font-face {
+    font-family: SpoqaHanSansBold;
+    src: url('./src/spoqahansans-bold.woff') format('woff')
+}
+
+* {
+    word-break: keep-all;
+}
+
+header, section {
+    font-family: SpoqaHanSans, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+nav, footer {
+    font-family: SpoqaHanSansBold, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    color: #555;
+}
+
+body {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+}
+.ha {
+    justify-content: center;
+}
+.va {
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-a {
+    font-family: SpoqaHanSansBold;
+    font-size: 4em;
+}
+.text-b { font-size: 2em; }
+.text-c { font-size: 1.75em; }
+.dot7 {
+    font-size: 0.7em;
+}
+
+header {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    background: #eee url('./src/annie-spratt-zA7I5BtFbvw-unsplash.jpg');
+    background-size: cover;
+    cursor: default;
+}
+header .text-a {
+    color: #555;
+}
+
+nav {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    margin-top: 50vh;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background: #fff;
+}
+
+#menu-list {
+    height: 48px;
+    justify-content: space-between;
+}
+#menu-left, #menu-right {
+    flex-basis: 380px;
+}
+#menu-center {
+    width: 72px;
+    flex-shrink: 0;
+}
+#menu-right {
+    justify-content: flex-end;
+}
+
+.menu-button {
+    vertical-align: middle;
+    padding: 10px 15px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #444;
+}
+.menu-button:hover {
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+
+section {
+    background: #f8f8fa;
+    transition: background 1s ease;
+}
+
+.sec-cont {
+    min-height: 100vh;
+    padding: 20px 0;
+    transition: min-height 2s ease;
+}
+#social.sec-cont {
+    min-height: 0vh;
+}
+
+.sbox-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sbox {
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #eee;
+    background: rgba(255, 255, 255, 1);
+    transition: border .5s ease;
+    
+    overflow: hidden;
+}
+.sbox.link {
+    cursor: pointer;
+}
+.sbox.link:hover {
+    border: 1px solid #aaa;
+}
+.sbox-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#sbox-froggymemo {
+    background-image: url('./src/froggymemo.png');
+}
+#sbox-tools {
+    background-image: url('./src/tools.png');
+}
+
+.trace-cont {
+    position: relative;
+}
+.trace-cont::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: lightgray;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.trace-box {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+}
+.trace-box::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #fff;
+    border: 4px solid #15bdce;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.trace-box::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+}
+.trace-left {
+    left: 0;
+}
+.trace-left::before {
+    right: 30px;
+    border: medium solid #fff;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+.trace-right {
+    left: 50%;
+}
+.trace-right::before {
+    left: 30px;
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.trace-right::after {
+    left: -16px;
+}
+
+footer {
+    height: 150px;
+    background: #f3e5f5;
+}
+
+@media screen and (max-width: 700px) {
+    .menu-nav {
+        display: none;
+    }
+
+    .sbox-cont {
+        grid-template-columns: 1fr;
+    }
+
+    .trace-cont::after {
+        left: 31px;
+    }
+    .trace-box {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .trace-box::before {
+        left: 30px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+    .trace-box::after {
+        left: 15px;
+    }
+    .trace-right {
+        left: 0;
+    }
+}
