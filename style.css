@@ -8,24 +8,19 @@
 }
 
 * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
     word-break: keep-all;
 }
 
-header, section {
+header, section, footer {
     font-family: SpoqaHanSans, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
-nav, footer {
+nav {
     font-family: SpoqaHanSansBold, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    text-shadow: rgba(0,0,0,.01) 0 0 1px;
-    color: #555;
 }
 
 body {
@@ -68,12 +63,16 @@ body {
 header {
     position: fixed;
     z-index: -1;
-    top: 0;
+    top: -15vh;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     background: #eee url('./src/annie-spratt-zA7I5BtFbvw-unsplash.jpg');
     background-size: cover;
     cursor: default;
+    transition: top .5s ease;
+}
+header .content {
+    height: 50vh;
 }
 header .text-a {
     color: #555;
@@ -109,7 +108,7 @@ nav {
     padding: 10px 15px;
     font-size: 17px;
     text-decoration: none;
-    color: #444;
+    color: #555;
 }
 .menu-button:hover {
     background-color: #e4e4e4;
@@ -119,6 +118,12 @@ nav {
 section {
     background: #f8f8fa;
     transition: background 1s ease;
+}
+section h2 {
+    color: #31333a;
+}
+section p {
+    color: #71737a;
 }
 
 .sec-cont {
@@ -228,11 +233,12 @@ section {
 
 footer {
     height: 150px;
-    background: #f3e5f5;
+    background: #353a40;
+    color: #c1c3ca;
 }
 
 @media screen and (max-width: 700px) {
-    .menu-nav {
+    #menu-left {
         display: none;
     }
 
