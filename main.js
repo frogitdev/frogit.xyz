@@ -8,15 +8,22 @@ $(window).ready(function() {
         $('#rss-feeds').rss('https://rss.blog.naver.com/kim04099',
         {
             ssl: 'true',
+            support: false,
             layoutTemplate: '{entries}',
             entryTemplate: `
                 <div class="sbox link" onclick="window.open('{url}', '_blank')">
+                    <div style="margin:8px 0"><span class="nametag">{category}</span></div>
                     <h2>{title}</h2>
                     <p>{shortBody}...</p>
-                    <h5>{date}</h5>
+                    <h4>{date}</h4>
                 </div>`,
+            tokens: {
+                category: function(entry) {
+                    return entry.categories[0].name
+                }
+            },
             dateFormatFunction: function(date){
-                return date.toString().split('T')[0]
+                return getTimeSince(date)
             },
             error: function(){
                 $('#rss-feeds').text('오류가 발생하여 불러올 수 없습니다.')
@@ -39,6 +46,19 @@ $(window).scroll(function() {
 })
 
 var a = 0
+
+function getTimeSince(date) {
+    var sec = Math.floor((new Date() - new Date(date)) / 1000)
+    var int = Math.floor(sec / 604800)
+    if (int >= 1) {
+        return int + '주 전'
+    }
+    int = Math.floor(sec / 86400);
+    if (int >= 1) {
+        return int + '일 전'
+    }
+    return '<span style="color:red">NEW</span>'
+}
 
 function scrollAnimation() {
     $('header').css('top', -Math.min(500, $(window).scrollTop())/2 + 'px')
