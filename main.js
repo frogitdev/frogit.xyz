@@ -1,6 +1,6 @@
 const btop = $('#project').offset().top
 
-$(window).ready(function() {
+/*$(window).ready(function() {
     const date = new Date().toISOString().split('T')[0].split('-')
     $('#today').html(`${date[0]}.<span class="dot7">${date[1]}.${date[2]}.</span>`)
 
@@ -30,7 +30,7 @@ $(window).ready(function() {
             }
         })
     })
-})
+})*/
 
 $(window).scroll(function() {
     const x = window.scrollY
