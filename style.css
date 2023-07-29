@@ -69,7 +69,7 @@ body, h4 {
     font-size: 4em;
 }
 .text-b { font-size: 2em; }
-.text-c { font-size: 1.75em; }
+.text-c { font-size: 1.3em; }
 .text-d { font-size: 1em; }
 .text-box {
     font-weight: bold;
@@ -213,6 +213,9 @@ section p {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+#keywords .sbox-cont {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 .sbox {
     border-radius: 5px;
@@ -235,6 +238,10 @@ section p {
     background-position: center;
 }
 #about .sbox {
+    white-space: nowrap;
+}
+#keywords .sbox {
+    text-align: center;
     white-space: nowrap;
 }
 
@@ -306,6 +313,8 @@ section p {
 .trace-right::after {
     left: -16px;
 }
+#trace h2 { margin: 0 auto; }
+#trace p { margin-bottom: 0; }
 
 footer {
     height: 150px;
@@ -322,6 +331,9 @@ footer {
 
     .sbox-cont {
         grid-template-columns: 1fr;
+    }
+    #keywords .sbox-cont {
+        grid-template-columns: 1fr 1fr;
     }
 
     .trace-cont::after {
