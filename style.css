@@ -70,6 +70,21 @@ body, h4 {
 }
 .text-b { font-size: 2em; }
 .text-c { font-size: 1.75em; }
+.text-d { font-size: 1em; }
+.text-box {
+    font-weight: bold;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.text-tbox {
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
 .dot7 {
     font-size: 0.7em;
 }
@@ -83,13 +98,46 @@ body, h4 {
     border-radius: 5px;
 }
 
+.octagon {
+    display: inline-block;
+	position: relative;
+    padding: 5px 15px;
+    margin-bottom: 50px;
+}
+.octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 29.7px solid black;
+	border-left: 29.7px solid #ffffff00;
+	width: 88%;
+	height: 0;
+}
+.octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 29.7px solid black;
+	border-right: 29.7px solid #ffffff00;
+	width: 88%;
+	height: 0;
+}
+.octagon span {
+    position: relative;
+    z-index: 1;
+    margin: 5px 15px;
+    color: white;
+}
+
 header {
     position: fixed;
     z-index: -1;
     top: -15vh;
     width: 100%;
     height: 80vh;
-    background: #eee url('./src/simon-matzinger-unsplash.jpg');
+    background: #eee url('./src/back.jpg');
     background-size: cover;
     background-position: bottom;
     cursor: default;
@@ -140,7 +188,8 @@ nav {
 }
 
 section {
-    background: #f8f8fa;
+    background-image: linear-gradient(45deg, #f2f2f4 4.55%, #f8f8fa 4.55%, #f8f8fa 50%, #f2f2f4 50%, #f2f2f4 54.55%, #f8f8fa 54.55%, #f8f8fa 100%);
+    background-size: 15.56px 15.56px;
     transition: background 1s ease;
 }
 section h2 {
@@ -184,6 +233,9 @@ section p {
     height: 200px;
     background-size: cover;
     background-position: center;
+}
+#about .sbox {
+    white-space: nowrap;
 }
 
 #sbox-froggymemo {

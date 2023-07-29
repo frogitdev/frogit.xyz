@@ -1,10 +1,10 @@
 const btop = $('#project').offset().top
 
-/*$(window).ready(function() {
+$(window).ready(function() {
     const date = new Date().toISOString().split('T')[0].split('-')
     $('#today').html(`${date[0]}.<span class="dot7">${date[1]}.${date[2]}.</span>`)
 
-    jQuery(function($) {
+    /*jQuery(function($) {
         $('#rss-feeds').rss('https://rss.blog.naver.com/kim04099',
         {
             ssl: 'true',
@@ -29,18 +29,18 @@ const btop = $('#project').offset().top
                 $('#rss-feeds').text('오류가 발생하여 불러올 수 없습니다.')
             }
         })
-    })
-})*/
+    })*/
+})
 
 $(window).scroll(function() {
     const x = window.scrollY
 
     switch(true) {
         case (x >= 0 && x < 100):
-            $('#social.sec-cont').css('min-height', `0vh`)
+            $('#about.sec-cont').css('min-height', `0vh`)
             break
         case (x >= 100 && x < btop):
-            $('#social.sec-cont').css('min-height', `100vh`)
+            $('#about.sec-cont').css('min-height', `100vh`)
             break
     }
 })

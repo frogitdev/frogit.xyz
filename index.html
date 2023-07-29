@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>-->
 </head>
 <body>
     <header>
@@ -26,10 +26,9 @@
     <nav class="row va ha">
         <div id="menu-list" class="content row">
             <div id="menu-left" class="row">
-                <a class="menu-button" onclick="scrollPage('#social')">최근 글</a>
-                <a class="menu-button" onclick="scrollPage('#introduce')">소개</a>
-                <a class="menu-button" onclick="scrollPage('#project')">작품</a>
-                <a class="menu-button" onclick="scrollPage('#trace')">연혁</a>
+                <a class="menu-button" onclick="scrollPage('#about')">ABOUT</a>
+                <a class="menu-button" onclick="scrollPage('#project')">WORKS</a>
+                <a class="menu-button" onclick="scrollPage('#trace')">HISTORY</a>
             </div>
             <div id="menu-center" class="row">
                 <a class="menu-button row va" onclick="scrollPage(0)">
@@ -37,31 +36,49 @@
                 </a>
             </div>
             <div id="menu-right" class="row">
-                <a class="menu-button" href="https://blog.naver.com/kim04099" target="_blank">블로그</a>
-                <a class="menu-button" href="https://instagram.com/hg.kim01" target="_blank">인스타그램</a>
+                <a class="menu-button" href="https://blog.naver.com/kim04099" target="_blank">BLOG</a>
+                <a class="menu-button" href="https://instagram.com/hg.kim01" target="_blank">INSTAGRAM</a>
             </div>
         </div>
     </nav>
     <section>
-        <div id="social" class="sec-cont row va ha">
+        <div id="about" class="sec-cont row va ha">
             <div class="content">
-            <h1 class="text-b">최근 글</h1>
-            <div id="rss-feeds" class="sbox-cont">
-                <h1>공사중</h1>
+            <h1 class="text-b octagon"><span>ABOUT</span></h1>
+            <div class="sbox-cont">
+                <div class="sbox"><span class="text-box text-d">본명</span><span class="text-d">김한경 金漢庚 Hangyeong Kim</span></div>
+                <div class="sbox"><span class="text-box text-d">출생</span><span class="text-d">2001.04.09(22세) 경기 의정부</span></div>
+                <div class="sbox"><span class="text-box text-d">국적</span><span class="text-d">🇰🇷 대한민국 REP. OF KOREA</span></div>
+                <div class="sbox"><span class="text-box text-d">본관</span><span class="text-d">경주 김씨</span></div>
+                <div class="sbox"><span class="text-box text-d">신체</span><span class="text-d">B형, 175cm, 68kg, 270cm, 0.1(나안)</span></div>
+                <div class="sbox"><span class="text-box text-d">학력</span><span class="text-d">경기도 소재 특성화고등학교<br><span class="text-tbox text-d">학력</span><span class="text-d"></span>정보통신학과 졸업</span></div>
+                <div class="sbox"><span class="text-box text-d">병역</span><span class="text-d">육군 복무 중(22.3.28~23.9.27)</span></div>
+                <div class="sbox"><span class="text-box text-d">직업</span><span class="text-d">금융권 ICT 인프라 관련분야 재직 중</span></div>
             </div>
             </div>
         </div>
-        <div id="introduce" class="sec-cont row va ha">
+        <div class="sec-cont row va ha">
             <div class="content">
-            <h1 class="text-b">소개</h1>
-            <span style="font-size:3em">“</span><br>
-            <p style="font-size:1.2em">하고 싶은 것도, 할 것도 많은 20대입니다. 2015년부터 블로그에 IT/코딩/디자인/게임/대중교통에 대한 글을 주로 쓰고 있는 잡 블로거입니다. 디자인을 좋아하긴 하지만 파워포인트를 쓰는 아마추어 디자이너입니다. 최근에는 네트워크와 리눅스 서버를 공부중입니다.</p><br>
-            <span style="font-size:3em">”</span>
+            <h1 class="text-b octagon"><span>RECENT</span></h1>
+            <p>#공사중 최근 하고 있는 활동들 #공사중</p>
+            <!-- <div id="rss-feeds" class="sbox-cont"></div> -->
+            </div>
+        </div>
+        <div class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b octagon"><span>KEYWORD</span></h1>
+            <p>#공사중 나를 표현하는 키워드들 #공사중</p>
+            </div>
+        </div>
+        <div class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b octagon"><span>PERSONALITY</span></h1>
+            <p>#공사중 나의 성격 장/단점 #공사중</p>
             </div>
         </div>
         <div id="project" class="sec-cont row va ha">
             <div class="content">
-            <h1 class="text-b">작품</h1>
+            <h1 class="text-b octagon"><span>WORKS</span></h1>
             <div class="sbox-cont">
                 <div id="sbox-froggymemo" class="sbox sbox-img link" onclick="window.open('https://memoapp.frogit.xyz', '_blank')">
                     
@@ -78,36 +95,36 @@
         </div>
         <div id="trace" class="sec-cont row va ha">
             <div class="content">
-            <h1 class="text-b">연혁</h1>
+            <h1 class="text-b octagon"><span>HISTORY</span></h1>
             <div class="trace-cont">
                 <div class="trace-box trace-left">
                     <div class="sbox">
-                    <h2>2013.<span class="dot7">05.</span></h2>
-                    <p>파워포인트 게임/가상OS 공유 블로그 'PreWorld'를 티스토리에 개설했습니다.</p>
+                    <h2>2001.<span class="dot7">04.09.</span></h2>
+                    <p>21세기가 시작된지 얼마 안되어 한 가족의 장남으로 태어나다.</p>
                     </div>
                 </div>
                 <div class="trace-box trace-right">
-                    <div class="sbox">
-                    <h2>2014.<span class="dot7">05.</span></h2>
-                    <p>워드프레스 홈페이지를 만들고, VB.NET 강좌를 시작했습니다.</p>
-                    </div>
-                </div>
-                <div class="trace-box trace-left">
                     <div class="sbox">
                     <h2>2015.<span class="dot7">02.14.</span></h2>
                     <p>네이버 블로그 개설. IT/소프트웨어 관련 포스팅을 통한 전성기의 시작.</p>
                     </div>
                 </div>
+                <div class="trace-box trace-left">
+                    <div class="sbox">
+                    <h2>2020.<span class="dot7">02.</span></h2>
+                    <p>특성화고등학교 정보통신학과 3년 과정을 무사히 마치고 졸업.</p>
+                    </div>
+                </div>
                 <div class="trace-box trace-right">
                     <div class="sbox">
-                    <h2>2017.<span class="dot7">01.</span></h2>
-                    <p>라즈베리파이로 소소한 웹 서비스들을 운영했습니다.</p>
+                    <h2>2020.<span class="dot7">02.</span></h2>
+                    <p>사회에 진출해서 ICT 인프라 전문가로 도약하는 중.</p>
                     </div>
                 </div>
                 <div class="trace-box trace-left">
                     <div class="sbox">
-                    <h2>2020.<span class="dot7">01.</span></h2>
-                    <p>사회에 진출해서 네트워크 전문가로 도약하고 있습니다.</p>
+                    <h2>2022.<span class="dot7">03.</span></h2>
+                    <p>나라의 부름을 받아 육군에 입대하다.</p>
                     </div>
                 </div>
                 <div class="trace-box trace-right">
@@ -116,13 +133,43 @@
                     <p>또 하나의 흔적을 남기기 위해 열심히 뛰는 중..</p>
                     </div>
                 </div>
+                <div class="trace-box trace-left">
+                    <div class="sbox">
+                    <h2>2023.<span class="dot7">09.</span></h2>
+                    <p>무사히 만기전역하여 더 나아진 모습으로 새로운 삶을 시작한다.</p>
+                    </div>
+                </div>
+                <div class="trace-box trace-right">
+                    <div class="sbox">
+                    <h2>2024.<span class="dot7">03.</span></h2>
+                    <p>대학교 ICT관련학과로 직장인 야간대학 수강을 위해 입학 예정이다.</p>
+                    </div>
+                </div>
             </div>
+            </div>
+        </div>
+        <div class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b octagon"><span>SPECIALITIES</span></h1>
+            <p>#공사중 나의 특기와 자격증 #공사중</p>
+            </div>
+        </div>
+        <div class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b octagon"><span>INTERESTED IN</span></h1>
+            <p>#공사중 나의 취미와 관심사 #공사중</p>
+            </div>
+        </div>
+        <div class="sec-cont row va ha">
+            <div class="content">
+            <h1 class="text-b octagon"><span>DEVICES</span></h1>
+            <p>#공사중 내가 쓰고 있는 IT 디바이스들 #공사중</p>
             </div>
         </div>
     </section>
     <footer class="row va">
         <div class="content dot7">
-            <p>FrogIT 공식 홈페이지<br><br>문의 : mail@frogit.xyz<br>(C) 2021 FrogIT. All Rights Reserved<br>Website made with only pure HTML & CSS</p>
+            <p>FrogIT 공식 홈페이지<br><br>문의 : mail@frogit.xyz<br>(C) 2023 FrogIT. All Rights Reserved<br>Website made with only pure HTML & CSS</p>
         </div>
     </footer>
     <script src="main.js"></script>
