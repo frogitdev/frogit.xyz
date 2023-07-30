@@ -27,6 +27,11 @@ body, h4 {
     margin: 0;
 }
 
+a {
+    font-size: 0.7em;
+    color: #4a91e2;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -47,7 +52,7 @@ body, h4 {
 }
 .column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .ha {
     justify-content: center;
@@ -87,6 +92,29 @@ body, h4 {
 }
 .dot7 {
     font-size: 0.7em;
+}
+#personality .text-box {
+    display: inline-block;
+    margin: 0 auto;
+}
+#pers1 .text-b {
+    font-weight: bolder;
+    color: black;
+}
+
+#pers1 .text-c {
+    margin-bottom: 0;
+    color: black;
+}
+#pers2 p, #pers3 p{
+    display: inline-block;
+}
+#pers2 .text-d, #pers3 .text-d {
+    border-radius: 20px;
+    border: 1.5px solid #71737a;
+    padding: 5px 20px 7px;
+    margin-right: 10px;
+    margin-bottom: 0;
 }
 
 .nametag {
@@ -244,6 +272,9 @@ section p {
     text-align: center;
     white-space: nowrap;
 }
+#pers1.sbox { grid-area: 1 / 1 / 3 / 2; }
+#pers2.sbox { grid-area: 1 / 2 / 2 / 3; }
+#pers3.sbox { grid-area: 2 / 2 / 3 / 3; }
 
 #sbox-froggymemo {
     background-image: url('./src/froggymemo.png');
@@ -279,10 +310,16 @@ section p {
     height: 25px;
     right: -17px;
     background-color: #fff;
-    border: 4px solid #4a91e2;
+    border: 4px solid black;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+}
+.trace-box.trace-present::after {
+    border: 4px solid #4a91e2;
+}
+.trace-box.trace-future::after {
+    border: 4px solid lightgray;
 }
 .trace-box::before {
     content: " ";
@@ -315,6 +352,7 @@ section p {
 }
 #trace h2 { margin: 0 auto; }
 #trace p { margin-bottom: 0; }
+.get-time-since { font-weight: lighter; }
 
 footer {
     height: 150px;
@@ -329,12 +367,20 @@ footer {
         display: none;
     }
 
+    .content {
+        padding: 0 10px;
+    }
+
     .sbox-cont {
         grid-template-columns: 1fr;
     }
     #keywords .sbox-cont {
         grid-template-columns: 1fr 1fr;
     }
+
+    #pers1.sbox { grid-area: 1 / 1 / 2 / 2; }
+    #pers2.sbox { grid-area: 2 / 1 / 3 / 2; }
+    #pers3.sbox { grid-area: 3 / 1 / 4 / 2; }
 
     .trace-cont::after {
         left: 31px;
