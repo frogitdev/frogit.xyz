@@ -106,7 +106,7 @@ body, h4 {
     color: black;
 }
 
-#pers1 .text-c {
+#pers1 .text-c, #specialities .text-c {
     margin-bottom: 0;
     color: black;
 }
@@ -262,6 +262,9 @@ section p {
 #about-social {
     margin-bottom: 30px;
 }
+#specialities .sbox-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .sbox {
     border-radius: 5px;
@@ -402,6 +405,18 @@ section p {
 #trace p { margin-bottom: 0; }
 .get-time-since { font-weight: lighter; }
 
+#specialities img {
+    margin-top: 10px;
+    width: 64px;
+    height: 64px;
+}
+#specialities ul {
+    padding: 0 0 0 20px;
+}
+#specialities li {
+    color: #71737a;
+}
+
 footer {
     height: 150px;
     border-top: 1px solid #e4e4e4;
@@ -420,6 +435,9 @@ footer {
     }
 
     .sbox-cont {
+        grid-template-columns: 1fr;
+    }
+    #specialities .sbox-cont {
         grid-template-columns: 1fr;
     }
     #about-social.sbox-cont, #keywords .sbox-cont {
