@@ -27,11 +27,6 @@ body, h4 {
     margin: 0;
 }
 
-a {
-    font-size: 0.7em;
-    color: #4a91e2;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -93,6 +88,15 @@ a {
 .dot7 {
     font-size: 0.7em;
 }
+.clinks {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+#personality a {
+    font-size: 0.7em;
+    color: #4a91e2;
+}
 #personality .text-box {
     display: inline-block;
     margin: 0 auto;
@@ -117,6 +121,10 @@ a {
     margin-bottom: 0;
 }
 
+#about h3 {
+    margin-top: 0;
+}
+
 .nametag {
     font-size: 12px;
     background: #4a91e2;
@@ -130,7 +138,7 @@ a {
     display: inline-block;
 	position: relative;
     padding: 5px 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .octagon:before {
 	content: "";
@@ -241,8 +249,11 @@ section p {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-#keywords .sbox-cont {
+#about-social.sbox-cont, #keywords .sbox-cont {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#about-social {
+    margin-bottom: 30px;
 }
 
 .sbox {
@@ -265,6 +276,9 @@ section p {
     background-size: cover;
     background-position: center;
 }
+#about-social .sbox {
+    padding: 10px;
+}
 #about .sbox {
     white-space: nowrap;
 }
@@ -282,6 +296,25 @@ section p {
 #sbox-tools {
     background-image: url('./src/tools.png');
 }
+
+#about-social .clinks {
+    content: "";
+    display: inline-block;
+    background-size: 1.25em;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+    margin-right: 0.4em;
+    width: 1.25em;
+    height: 1.25em;
+}
+#social-blog:before {background-image: url(./src/blog.png);}
+#social-notion:before {background-image: url(./src/notion.svg);}
+#social-github:before {background-image: url(./src/github.svg);}
+#social-insta:before {background-image: url(./src/insta.svg);}
+#social-kakao:before {background-image: url(./src/kakao.svg);}
+#social-telegram:before {background-image: url(./src/telegram.svg);}
+#social-youtube:before {background-image: url(./src/youtube.svg);}
+#social-email:before {background-image: url(./src/email.svg);}
 
 .trace-cont {
     position: relative;
@@ -374,7 +407,7 @@ footer {
     .sbox-cont {
         grid-template-columns: 1fr;
     }
-    #keywords .sbox-cont {
+    #about-social.sbox-cont, #keywords .sbox-cont {
         grid-template-columns: 1fr 1fr;
     }
 
