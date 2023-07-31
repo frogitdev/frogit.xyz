@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="content row va">
-            <div class="text-a">FROGIT</div>
+            <div class="text-a"><span class="loaded">FROGIT</span><br><span class="loading">불러오는 중..</span></div>
         </div>
     </header>
     <nav class="row va ha">
@@ -32,7 +32,8 @@
             </div>
             <div id="menu-center" class="row">
                 <a class="menu-button row va" onclick="scrollPage(0)">
-                    <img src="./src/logo_blacktrans.png">
+                    <img class="loaded" src="./src/logo_blacktrans.png">
+                    <img class="loading" src="./src/loading.gif">
                 </a>
             </div>
             <div id="menu-right" class="row">
@@ -42,10 +43,10 @@
         </div>
     </nav>
     <section>
-        <div id="about" class="sec-cont row va ha">
+        <div id="about" class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>ABOUT</span></h1>
-            <h3>안녕하세요. 끊임없이 도전하면서 다재다능한 ICT 전문가가 되고싶은 FrogIT입니다.</h3>
+            <h3 class="text-cent">안녕하세요. 끊임없이 도전하면서 다재다능한 ICT 전문가가 되고싶은 FrogIT입니다.</h3>
             <div id="about-social" class="sbox-cont text-d">
                 <a id="social-blog" class="sbox clinks" href="https://blog.naver.com/kim04099" target="_blank">Naver Blog</a>
                 <a id="social-notion" class="sbox clinks" href="http://notion.frogit.xyz" target="_blank">Notion</a>
@@ -69,14 +70,14 @@
             </div>
             </div>
         </div>
-        <div class="sec-cont row va ha">
+        <div class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>RECENT</span></h1>
             <p>#공사중 최근 하고 있는 활동들 #공사중</p>
             <!-- <div id="rss-feeds" class="sbox-cont"></div> -->
             </div>
         </div>
-        <div id="personality" class="sec-cont row va ha">
+        <div id="personality" class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>PERSONALITY</span></h1>
             <div class="sbox-cont">
@@ -107,7 +108,7 @@
             </div>
             </div>
         </div>
-        <div id="keywords" class="sec-cont row va ha">
+        <div id="keywords" class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>KEYWORDS</span></h1>
             <div class="sbox-cont text-c">
@@ -118,7 +119,7 @@
             <p><del>이정도면 키워드가 아니라 TMI인듯</del></p>
             </div>
         </div>
-        <div id="project" class="sec-cont row va ha">
+        <div id="project" class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>WORKS</span></h1>
             <div class="sbox-cont">
@@ -135,7 +136,7 @@
             </div>
             </div>
         </div>
-        <div id="trace" class="sec-cont row va ha">
+        <div id="trace" class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>HISTORY</span></h1>
             <div class="trace-cont">
@@ -190,7 +191,7 @@
             </div>
             </div>
         </div>
-        <div id="specialities" class="sec-cont row va ha">
+        <div id="specialities" class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>SPECIALITIES</span></h1>
             <div class="sbox-cont">
@@ -221,20 +222,20 @@
             </div>
             </div>
         </div>
-        <div class="sec-cont row va ha">
+        <div class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>INTERESTED IN</span></h1>
             <p>#공사중 나의 취미와 관심사 #공사중</p>
             </div>
         </div>
-        <div class="sec-cont row va ha">
+        <div class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>DEVICES</span></h1>
             <p>#공사중 내가 쓰고 있는 IT 디바이스들 #공사중</p>
             </div>
         </div>
     </section>
-    <footer class="row va">
+    <footer class="loaded row va">
         <div class="content dot7">
             <p>FrogIT 공식 홈페이지<br><br>문의 : mail@frogit.xyz<br>(C) 2023 FrogIT. All Rights Reserved<br>Website made with only pure HTML & CSS<br>Icon by flaticon.com</p>
         </div>

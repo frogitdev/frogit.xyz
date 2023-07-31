@@ -36,6 +36,11 @@ $(window).ready(function() {
     })*/
 })
 
+$(window).on('load', function() {
+    $('.loading').hide()
+    $('.loaded').css('opacity', '1')
+})
+
 $(window).scroll(function() {
     const x = window.scrollY
 

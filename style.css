@@ -27,6 +27,11 @@ body, h4 {
     margin: 0;
 }
 
+.loaded {
+    opacity: 0;
+    transition: all 2s ease;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -84,6 +89,9 @@ body, h4 {
     color: white;
     padding: 5px 10px;
     margin-right: 10px;
+}
+.text-cent {
+    text-align: center;
 }
 .dot7 {
     font-size: 0.7em;
@@ -243,9 +251,10 @@ section p {
 }
 
 .sec-cont {
-    min-height: 100vh;
     padding: 20px 0;
-    transition: min-height 2s ease;
+}
+.sec-cont:not(#about) {
+    min-height: 100vh;
 }
 #social.sec-cont {
     min-height: 0vh;
@@ -255,6 +264,7 @@ section p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    transition: all 2s ease;
 }
 #about-social.sbox-cont, #keywords .sbox-cont {
     grid-template-columns: 1fr 1fr 1fr 1fr;
