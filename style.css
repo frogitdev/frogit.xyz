@@ -114,7 +114,7 @@ body, h4 {
     color: black;
 }
 
-#pers1 .text-c, #specialities .text-c {
+#pers1 .text-c, #specialities .text-c, #interests .text-c {
     margin-bottom: 0;
     color: black;
 }
@@ -272,9 +272,6 @@ section p {
 #about-social {
     margin-bottom: 30px;
 }
-#specialities .sbox-cont {
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 .sbox {
     border-radius: 5px;
@@ -420,10 +417,10 @@ section p {
     width: 64px;
     height: 64px;
 }
-#specialities ul {
+#specialities ul, #interests ul {
     padding: 0 0 0 20px;
 }
-#specialities li {
+#specialities li, #interests li {
     color: #71737a;
 }
 
@@ -445,9 +442,6 @@ footer {
     }
 
     .sbox-cont {
-        grid-template-columns: 1fr;
-    }
-    #specialities .sbox-cont {
         grid-template-columns: 1fr;
     }
     #about-social.sbox-cont, #keywords .sbox-cont {
