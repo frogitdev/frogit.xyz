@@ -3,7 +3,7 @@ const btop = $('#project').offset().top
 $(window).ready(function() {
     const date = new Date().toISOString().split('T')[0].split('-')
     $('#today').html(`${date[0]}.<span class="dot7">${date[1]}.${date[2]}. 현재</span>`)
-    const traces = [1,2,3,4,5]
+    const traces = [1,2,3,4,5,6,7]
     traces.forEach((v) => {
         $(`#get-time-since${v}`).html(getTimeSince($(`#get-time-since${v}`).text()))
     })
