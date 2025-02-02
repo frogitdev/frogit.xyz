@@ -11,6 +11,7 @@
     <meta property="og:image" content="/src/icon.png">
     <meta property="og:description" content="FrogIT에 대해 가장 빠르게 알아볼 수 있는 공식 홈페이지">
     <meta property="og:title" content="FrogIT 공식 홈페이지">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="icon" href="./src/icon.png">
 
     <link rel="stylesheet" href="style.css">
@@ -19,11 +20,6 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>-->
 </head>
 <body>
-    <header>
-        <div class="content row va">
-            <div class="text-a"><span class="loaded">FROGIT</span><br><span class="loading">불러오는 중..</span></div>
-        </div>
-    </header>
     <nav class="row va ha">
         <div id="menu-list" class="content row">
             <div id="menu-left" class="row">
@@ -47,7 +43,6 @@
         <div id="about" class="loaded sec-cont row va ha">
             <div class="content">
             <h1 class="text-b octagon"><span>ABOUT</span></h1>
-            <h3 class="text-cent">안녕하세요. 끊임없이 도전하면서 다재다능한 ICT 전문가가 되고싶은 FrogIT입니다.</h3>
             <div id="about-social" class="sbox-cont text-d">
                 <a id="social-blog" class="sbox clinks" href="https://blog.naver.com/kim04099" target="_blank">Naver Blog</a>
                 <a id="social-notion" class="sbox clinks" href="http://notion.frogit.xyz" target="_blank">Notion</a>
@@ -59,11 +54,11 @@
                 <a id="social-email" class="sbox clinks" href="mailto:mail@frogit.xyz" target="_blank">E-mail</a>
             </div>
             <div class="sbox-cont">
-                <div class="sbox"><span class="text-box text-d">닉네임</span><span class="text-d">FrogIT (프로그아이티, 프로깃)</span></div>
-                <div class="sbox"><span class="text-box text-d">본명</span><span class="text-d">김한경 金漢庚 Hangyeong Kim</span></div>
-                <div class="sbox"><span class="text-box text-d">출생</span><span class="text-d">2001.04.09 (22세)</span></div>
-                <div class="sbox"><span class="text-box text-d">학업</span><span class="text-d">성균관대학교 응용AI융합학부 재학중</span></div>
-                <div class="sbox"><span class="text-box text-d">직업</span><span class="text-d">신한은행 ICT 개발 분야 재직중</span></div>
+                <div class="sbox"><i class="icon-box text-d fa fa-tags"></i><span class="text-d">FrogIT (프로그아이티, 프로깃)</span></div>
+                <div class="sbox"><i class="icon-box text-d fa fa-signature"></i><span class="text-d">김한경 金漢庚 Hangyeong Kim</span></div>
+                <div class="sbox"><i class="icon-box text-d fa fa-cake-candles"></i><span class="text-d">2001.04.09 (23세)</span></div>
+                <div class="sbox"><i class="icon-box text-d fa fa-graduation-cap"></i><span class="text-d">성균관대학교 AI융합운영전공 재학중</span></div>
+                <div class="sbox"><i class="icon-box text-d fa fa-briefcase"></i><span class="text-d">신한은행 ICT 개발 분야 재직중</span></div>
             </div>
             </div>
         </div>
@@ -71,8 +66,11 @@
             <div class="content">
             <h1 class="text-b octagon"><span>RECENT</span></h1>
             <div class="sbox-cont">
-                <div class="sbox text-c">최근 하고 있는 활동들</div>
-                <div class="sbox text-c"># 공사중</div>
+                <div class="sbox text-c"><span id="get-recent-since1" class="text-box">2024-11-04</span> 🇯🇵 후쿠오카 여행을 다녀왔어요.</div>
+                <div class="sbox text-c"><span id="get-recent-since2" class="text-box">2024-12-17</span> 📖 2학기를 무사히 마쳤어요.</div>
+                <div class="sbox text-c"><span id="get-recent-since3" class="text-box">2024-12-23</span> 🇭🇰 홍콩 여행을 다녀왔어요.</div>
+                <div class="sbox text-c"><span id="get-recent-since4" class="text-box">2025-01-10</span> 🈴 JLPT N3를 취득했어요.</div>
+                <div class="sbox text-c"><span id="get-recent-since5" class="text-box">2025-01-31</span> 🥁 드럼을 배우기 시작했어요.</div>
             </div>
             </div>
         </div>
@@ -81,7 +79,7 @@
             <h1 class="text-b octagon"><span>PERSONALITY</span></h1>
             <div class="sbox-cont">
                 <div id="pers1" class="sbox">
-                    <p class="text-box text-d">16 Personalities (MBTI)</p>
+                    <p class="text-box text-d"><i class="fa fa-person-military-pointing"></i> 16 Personalities (MBTI)</p>
                     <p><span class="text-b">I S F J </span><span class="text-d">잇프제 </span><a href="https://namu.wiki/w/ISFJ" target="_blank">더 알아보기</a></p>
                         <p><span class="text-c">내향형 </span><span class="text-d">(Introversion)</span></p>
                             <p>깊이 있는 대인관계를 유지하며 조용하고 신중하며 이해한 다음에 경험한다.</p>
@@ -93,15 +91,15 @@
                             <p>분명한 목적과 방향이 있으며 기한을 엄수하고 철저히 사전계획하고 체계적이다.</p>
                 </div>
                 <div id="pers2" class="sbox">
-                    <p class="text-box text-c" style="background: #22A699">Strength</p>
+                    <p class="text-box text-c" style="color: #22A699"><i class="fa fa-face-smile" style="margin-right: 10px;"></i>Strength</p>
                     <div>
-                        <p class="text-d">인내심이 많음</p><p class="text-d">섬세함</p><p class="text-d">집중을 잘함</p><p class="text-d">공감을 잘함</p><p class="text-d">계획적임</p><p class="text-d">감성적임</p>
+                        <p class="text-d">인내심이 많음</p><p class="text-d">섬세함</p><p class="text-d">집중을 잘함</p><p class="text-d">계획적임</p>
                     </div>
                 </div>
                 <div id="pers3" class="sbox">
-                    <p class="text-box text-c" style="background: #F24C3D">Weakness</p>
+                    <p class="text-box text-c" style="color: #F24C3D"><i class="fa fa-face-sad-tear" style="margin-right: 10px;"></i>Weakness</p>
                     <div>
-                        <p class="text-d">노잼</p><p class="text-d">완벽주의적</p><p class="text-d">생각이 많음</p><p class="text-d">비사교적</p><p class="text-d">의존적</p><p class="text-d">잦은 감정기복</p>
+                        <p class="text-d">완벽주의적</p><p class="text-d">생각이 많음</p><p class="text-d">비사교적</p><p class="text-d">의존적</p>
                     </div>
                 </div>
             </div>
@@ -184,7 +182,7 @@
             <h1 class="text-b octagon"><span>SKILLS</span></h1>
             <div class="sbox-cont">
                 <div class="sbox">
-                    <p class="text-c">🖼️ 프론트엔드 웹 개발</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-laptop-code"></i>프론트엔드 웹 개발</p>
                     <ul>
                         <li>HTML & CSS</li>
                         <li>JavaScript ES6</li>
@@ -194,7 +192,7 @@
                     </ul>
                 </div>
                 <div class="sbox">
-                    <p class="text-c">🔧 LAN 네트워크 구성</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-server"></i>LAN 네트워크 구성</p>
                     <ul>
                         <li>IPv4 Design</li>
                         <li>L3 Routing & L2 Switching Design</li>
@@ -202,7 +200,7 @@
                     </ul>
                 </div>
                 <div class="sbox">
-                    <p class="text-c">📊 사무자동화</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-table-cells-row-lock"></i>사무자동화</p>
                     <ul>
                         <li>Windows 10</li>
                         <li>PowerPoint</li>
@@ -212,10 +210,11 @@
                     </ul>
                 </div>
                 <div class="sbox">
-                    <p class="text-c">📰 외국어</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-language"></i>일본어</p>
                     <ul>
-                        <li>영어 Reading & Writing TOEIC® Score : 860</li>
-                        <li>일본어 日本語（聴解、読解）JLPT N4</li>
+                        <li>JLPT 일본어능력시험 N3 취득</li>
+                        <li style="font-family: Meiryo, sans-serif; font-weight: bolder;">易しい日本語で書かれた文章が読めます。<br>(일본어로 쓰인 보통의 문장을 읽을 수 있습니다.)</li>
+                        <li style="font-family: Meiryo, sans-serif; font-weight: bolder;">簡単な会話ができます。<br>(간단한 회화가 가능합니다.)</li>
                     </ul>
                 </div>
             </div>
@@ -226,15 +225,15 @@
             <h1 class="text-b octagon"><span>INTERESTED IN</span></h1>
             <div class="scroll-cont">
                 <div class="scrollbox">
-                    <p class="text-c">🐈 고양이</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-cat"></i>고양이</p>
                     <ul>
                         <li>고양이 키우기</li>
-                        <li>고양이 집사 5년차</li>
+                        <li>고양이 집사 6년차</li>
                         <li>고양이 유튜브 보기</li>
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c"> Apple 매니아</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-mobile-screen-button"></i>Apple 매니아</p>
                     <ul>
                         <li>사과농장 만들기</li>
                         <li>iPhone, iPad, MacBook, Watch 등..</li>
@@ -242,7 +241,7 @@
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">🎵 팝송</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-music"></i>팝송</p>
                     <ul>
                         <li>Bruno Mars</li>
                         <li>The Weeknd</li>
@@ -254,18 +253,18 @@
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">🎵 JPOP</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-guitar"></i>JPOP</p>
                     <ul>
                         <li>YOASOBI</li>
                         <li>Official HIGE DANdism</li>
+                        <li>Mrs. GREEN APPLE</li>
+                        <li>Vaundy</li>
                         <li>ZUTOMAYO</li>
-                        <li>Nanawo Akari</li>
-                        <li>Kenshi Yonezu</li>
                         <li>등..</li>
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">📺 서브컬처</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-film"></i>서브컬처</p>
                     <ul>
                         <li>이세계 아이돌</li>
                         <li>스텔라이브</li>
@@ -274,7 +273,7 @@
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">🎮 평화주의자 게임</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-gamepad"></i>평화주의자 게임</p>
                     <ul>
                         <li>마인크래프트</li>
                         <li>모여봐요 동물의 숲</li>
@@ -282,7 +281,7 @@
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">🕹️ 교통 시뮬레이터</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-truck"></i>교통 시뮬레이터</p>
                     <ul>
                         <li>Bus Simulator</li>
                         <li>Hmmsim Metro</li>
@@ -292,20 +291,20 @@
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">🚆 철도 동호인</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-train-subway"></i>철도 동호인</p>
                     <ul>
                         <li>지하철, 기차 타고 돌아다니기</li>
                         <li>열차 사진 찍기</li>
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">🚗 자동차 드라이빙</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-car-side"></i>자동차 드라이빙</p>
                     <ul>
                         <li>자가용 타고 돌아다니기</li>
                     </ul>
                 </div>
                 <div class="scrollbox">
-                    <p class="text-c">🚲 자전거 라이딩</p>
+                    <p class="text-c"><i class="icon-box text-d fa fa-person-biking"></i>자전거 라이딩</p>
                     <ul>
                         <li>자전거 타고 50km 달리기</li>
                     </ul>
@@ -327,7 +326,6 @@
                         <li><span class="highlight">워치</span>Apple Watch 9th Midnight</li>
                         <li><span class="highlight">이어폰</span>AirPods Pro 2nd</li>
                         <li>iPhone 6s Space Gray</li>
-                        <li>iPhone 7 Rose Gold</li>
                         <li>iPhone XS Space Gray</li>
                         <li>iPhone 11 White</li>
                         <li>iPhone SE(2nd) White</li>
@@ -340,7 +338,7 @@
     </section>
     <footer class="loaded row va">
         <div class="content dot7">
-            <p>FrogIT 공식 홈페이지<br><br>문의 : mail@frogit.xyz<br>(C) 2024 FrogIT. All Rights Reserved<br>Website made with only pure HTML & CSS<br>Icon by flaticon.com</p>
+            <p>FrogIT 공식 홈페이지<br><br>문의 : mail@frogit.xyz<br>(C) 2025 FrogIT. All Rights Reserved<br>Website made with only pure HTML & CSS<br>Icon by flaticon.com</p>
         </div>
     </footer>
     <script src="main.js"></script>

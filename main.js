@@ -2,6 +2,10 @@ const btop = $('#project').offset().top
 
 $(window).ready(function() {
     const date = new Date().toISOString().split('T')[0].split('-')
+    const recents = [1,2,3,4,5,6,7,8,9]
+    recents.forEach((v) => {
+        $(`#get-recent-since${v}`).html(getTimeSince($(`#get-recent-since${v}`).text()))
+    })
     $('#today').html(`${date[0]}.<span class="dot7">${date[1]}.${date[2]}. 현재</span>`)
     const traces = [1,2,3,4,5,6,7]
     traces.forEach((v) => {
@@ -41,19 +45,6 @@ $(window).on('load', function() {
     $('.loaded').css('opacity', '1')
 })
 
-$(window).scroll(function() {
-    const x = window.scrollY
-
-    switch(true) {
-        case (x >= 0 && x < 100):
-            $('#about.sec-cont').css('min-height', `0vh`)
-            break
-        case (x >= 100 && x < btop):
-            $('#about.sec-cont').css('min-height', `100vh`)
-            break
-    }
-})
-
 var a = 0
 
 function getTimeSince(date) {
@@ -66,11 +57,15 @@ function getTimeSince(date) {
     if (int >= 1) {
         return int + '개월 전'
     }
+    int = Math.floor(sec / 604800);
+    if (int >= 1) {
+        return int + '주 전'
+    }
+    int = Math.floor(sec / 86400);
+    if (int >= 1) {
+        return int + '일 전'
+    }
     return 'NEW'
-}
-
-function scrollAnimation() {
-    $('header').css('top', -Math.min(500, $(window).scrollTop())/2 + 'px')
 }
 
 function scrollPage(somewhere) {
@@ -84,5 +79,3 @@ function scrollPage(somewhere) {
     }
     window.scroll({ top: num, left: 0, behavior: "smooth" })
 }
-
-setInterval(scrollAnimation, 100)
